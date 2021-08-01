@@ -1,0 +1,49 @@
+/*styling of header for page*/
+.page_header {
+	padding: 30px 0 20px;
+	text-align: center;
+}
+
+/*create box for profile area*/
+.wrapper {
+	display: grid;
+	grid-template-columns: 35% auto;
+	margin-right: 20%;
+	margin-left: 20%;
+	height: 350px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*maximise size of image in profile section*/
+.wrapper .profile_image img {
+	width: 100%;
+	height: 100%;
+}
+
+/*styling of info in profile section*/
+.wrapper .profile_info {
+	background: black;
+	color: white;
+	max-height: 100%;
+	padding: 0 20% 0 0;
+	text-align: left;
+	padding: 40px 40px;
+}
+
+/* styling of footer */
+.footer {
+  background-color: #f1f1f1;
+  padding:10px;
+  text-align: center;
+  position: fixed;
+}
+
+/*responsive styling for less than certain tab size*/
+@media screen and (max-width: 1200px) {
+	.wrapper {
+  		grid-template-columns: auto;
+  		margin-right: 35%;
+  		margin-left: 35%;
+  		height: 790px;
+	}
+}
